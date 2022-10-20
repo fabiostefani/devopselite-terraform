@@ -1,0 +1,13 @@
+terraform init >> para iniciar o ambiente de trabalho com terraform
+
+terraform apply >> para aplicar as configurações e criar ambiente
+
+terraform fmt >> aplica formação no arquivo do terraform
+
+terraform plan >> mostra o plano de execução do terraform
+
+Quando se adiciona um novo provider no arquivo terraform, tem que ser executado novamente o INIT
+
+terraform destroy >> destroy o ambiente do terraform
+
+http://registry.terraform.io/ >> para adicionar provides e afins no aquivo do terraform.
