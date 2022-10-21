@@ -11,3 +11,38 @@ Quando se adiciona um novo provider no arquivo terraform, tem que ser executado 
 terraform destroy >> destroy o ambiente do terraform
 
 http://registry.terraform.io/ >> para adicionar provides e afins no aquivo do terraform.
+
+165.227.110.198
+
+
+
+>> instalação do Jenkins
+
+. Necessita ter o Java no Linux que vai rodar
+apt install openjdk-17-jdk -y
+
+. seguir a documentação
+https://www.jenkins.io/doc/book/installing/linux/#debianubuntu
+
+>> preparando a máquina
+curl -fsSL https://get.docker.com | sh
+
+usermod -aG docker jenkins >> dar permissão para o usuário no docker sem precisar rodar com Sudo (jenkins = usuário)
+
+. instalar k8s
+https://kubernetes.io/docs/tasks/tools/install-kubectl-linux/
+
+. para acessar o Jenkins
+Browser, ip publico da máquina que roda o Jenkins :8080
+165.227.110.198:8080
+
+após configurar o jenkins para acessar
+instalar extensões do jenkins para utilizar docker e kubectl
+docker e docker pipeline
+kubernetes cli
+
+
+
+precisa adicionar a credencial no jenkins para depois usar no jenkinsfile para subir a image no dockerhub, exemplo
+
+para fazer o auto deploy no jenkins, tem que adicionar o webhook no Git para disparar o evento no Jenkins
