@@ -41,6 +41,8 @@ instalar extensões do jenkins para utilizar docker e kubectl
 docker e docker pipeline
 kubernetes cli
 
+reiniciar o jenkins
+
 
 
 precisa adicionar a credencial no jenkins para depois usar no jenkinsfile para subir a image no dockerhub, exemplo
